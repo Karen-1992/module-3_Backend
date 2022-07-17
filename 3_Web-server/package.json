@@ -1,0 +1,26 @@
+{
+  "name": "note-app",
+  "version": "1.0.1",
+  "description": "this is simple nodeJS application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Karen Habuzian <karen.gabuzyan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.10",
+    "nodemon": "^2.0.19"
+  }
+}
