@@ -29,7 +29,14 @@ yargs.command({
 yargs.command({
     command: "remove",
     describe: "Remove note by id",
-    handler({ id }) {
+    builder: {
+        id: {
+            type: "string",
+            describe: "Note uniq id",
+            demandOption: true
+        }
+    },
+    async handler({ id }) {
         removeNote(id);
     }
 });
